@@ -15,6 +15,7 @@
         android:layout_alignBottom="@+id/image_view"
         android:background="@drawable/gradient"
         />
+
     <TextView
         android:id="@+id/text_view_user_name"
         android:layout_width="wrap_content"
@@ -25,10 +26,8 @@
         android:layout_alignBottom="@+id/image_view"
         android:textColor="#fff"
         android:drawablePadding="4dp"
-        android:drawbleStartCompat="@drawable/ic_user"
         android:gravity="center_vertical"
         android:layout_margin="8dp"
-
         />
 
 </RelativeLayout>
