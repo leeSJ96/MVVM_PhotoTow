@@ -1,10 +1,8 @@
 package com.codinginflow.imagesearchapp.ui.gallery
 
+import androidx.hilt.Assisted
 import androidx.hilt.lifecycle.ViewModelInject
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.switchMap
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import androidx.paging.cachedIn
 import com.codinginflow.imagesearchapp.data.UnsplashRepository
 import retrofit2.http.Query
@@ -24,5 +22,6 @@ class GalleryViewModel @ViewModelInject constructor(private val repository: Unsp
 
     companion object{
         private const val DEFFAULT_QUERY = "cats"
+        private const val CURRENT_QUERY = "current_query"
     }
 }

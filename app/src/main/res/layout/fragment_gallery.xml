@@ -5,9 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.gallery.GalleryFragment"
+    android:background="@color/colorPrimary"
     >
 
     <androidx.recyclerview.widget.RecyclerView
+
         android:id="@+id/recycler_view"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_unsplash_photo"
@@ -17,6 +19,7 @@
     <ProgressBar
         android:id="@+id/progress_bar"
         android:visibility="gone"
+        android:indeterminateTint="#fff"
         tools:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
